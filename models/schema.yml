@@ -6,4 +6,103 @@ sources :
       - name : contrat_deca_test
 
       - name : mapping_codes_postaux
+
+
+
+models :
+  - name : stg_Datagouv__contrat_deca_test
+    description : table principale avec la liste des alternants
+    columns : 
+      - name : id_alternant
+        description : numéro d'identification de l'alternant
+        
+      - name : numero_contrat
+        description : numéro d'identification du contrat
+
+      - name : alternant_date_naissance
+        description : date de naissance de l'alternant
+      
+      - name : alternant_sexe
+        description : alternant homme ou femme
+
+      - name : alternant_adresse_code_postal
+        description : code postal de l'alternant
+
+      - name : formation_intitule_ou_qualification
+        description : nom de la formation choisie par l'alternant
+      
+      - name : titre_diplome_groupe
+        description : classification du diplôme
+      
+      - name : formation_date_debut
+        description : date de début de la formation
+
+      - name : formation_date_fin
+        description : date de fin de la formation
+
+      - name : date_debut_contrat
+        description : date de début de contrat
+      
+      - name : date_fin_contrat
+        description : date de fin de contrat
+
+      - name : date_effet_rupture
+        description : si rupture de contrat, la date de rupture est indiquée
+
+      - name : employeur_adresse_code_postal
+        description : code postal de l'employeur de l'alternant
+      
+      - name : employeur_nombre_de_salaries
+        description : nombre de salariés de l'employeur
+      
+      - name : type_employeur_libelle
+        description : catégorie de l'employeur (privé, public...)
+
+  - name : stg_Datagouv__mapping_codes_postaux
+    description : table reprenant tous les identifiants géographiques liés à chaque code postaux
+    columns : 
+      - name :  code_commune_insee
+        description : code insee de la commune
+      
+      - name : nom_commune_postal
+        description : nom de la commune
+      
+      - name : code_postal
+        description : code postal
+      
+      - name : libelle_acheminement
+        description: doublon ? libellé de la commune
+      
+      - name :  ligne_5
+        description : ??
+
+      - name : latitude
+        description : latitude
+      
+      - name : longitude,
+        description : longitude
+
+      - name : code_commune
+        description : code commune
+      
+      - name : article
+        description : précision si la commune à un article ou - not_null
+      
+      - name : nom_commune
+        description : nom de la commune sans déterminant
+      
+      - name : nom_commune_complet
+        description : nom commune complet
+      
+      - name : code_departement
+        description : code département
+      
+      - name : nom_departement
+        description : nom du département
+      
+      - name : code_region
+        description : code de la région
+      
+      - name : nom_region
+        description : nom de la région
       
