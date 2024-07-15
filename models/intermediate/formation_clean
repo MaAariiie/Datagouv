@@ -1,6 +1,0 @@
-select
-    id_alternant,
-    formation_intitule_ou_qualification
-
-FROM{{ref('Datagouv__contrat_deca_test')}}
-
