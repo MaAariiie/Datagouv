@@ -4,3 +4,6 @@ sources :
   - name : Datagouv
     tables :
       - name : contrat_deca_test
+
+      - name : mapping_codes_postaux
+      
