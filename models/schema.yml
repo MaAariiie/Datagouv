@@ -7,6 +7,8 @@ sources :
 
       - name : mapping_codes_postaux
 
+      - name : total_codes_postaux
+
 
 
 models :
