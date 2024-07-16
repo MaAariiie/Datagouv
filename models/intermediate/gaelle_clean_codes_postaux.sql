@@ -8,7 +8,7 @@ from {{ source('Datagouv', 'total_codes_postaux') }}
 ORDER BY LPAD(CAST(code_postal AS STRING), 5, '0')
 )
 
-SELECT 
+SELECT DISTINCT
 code_commune_INSEE,
 nom_commune_postal,
 corrected_postal_code,
@@ -43,5 +43,5 @@ CASE
 END AS nom_departement_clean
 
 FROM test
-
+WHERE corrected_postal_code = ""
 ORDER BY code_commune_INSEE

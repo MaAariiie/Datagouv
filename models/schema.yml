@@ -107,4 +107,39 @@ models :
       
       - name : nom_region
         description : nom de la région
+
+  - name : gaelle_clean_codes_postaux
+    description : table reprenant tous les identifiants géographiques liés à chaque code postaux, table nettoyée
+    columns : 
+      - name : code_commune_insee
+        description : code insee de la commune
       
+      - name : nom_commune_postal
+        description : nom de la commune
+      
+      - name : corrected_postal_code
+        description : code postal nettoyé
+        tests: 
+          - not_null
+          - unique
+      
+      - name : libelle_acheminement
+        description: libellé de la commune
+
+      - name : latitude
+        description : latitude
+      
+      - name : longitude,
+        description : longitude
+
+      - name : code_commune
+        description : code commune
+      
+      - name : nom_commune_complet
+        description : nom commune complet
+      
+      - name : nom_region_clean
+        description : code de la région nettoyé
+      
+      - name : nom_departement_clean
+        description : nom de la région nettoyé
