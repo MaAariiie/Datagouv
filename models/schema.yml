@@ -19,8 +19,11 @@ models :
         description : numéro d'identification de l'alternant
         
       - name : numero_contrat
-        description : numéro d'identification du contrat
-
+        description : numéro d'identification du contrat - primary key
+        tests:
+          - unique
+          - not_null
+          
       - name : alternant_date_naissance
         description : date de naissance de l'alternant
       
@@ -53,7 +56,9 @@ models :
 
       - name : employeur_adresse_code_postal
         description : code postal de l'employeur de l'alternant
-      
+        tests:
+          - not_null
+          
       - name : employeur_nombre_de_salaries
         description : nombre de salariés de l'employeur
       
@@ -108,6 +113,7 @@ models :
       - name : nom_region
         description : nom de la région
 
+
   - name : gaelle_clean_codes_postaux
     description : table reprenant tous les identifiants géographiques liés à chaque code postaux, table nettoyée
     columns : 
@@ -143,3 +149,4 @@ models :
       
       - name : nom_departement_clean
         description : nom de la région nettoyé
+
