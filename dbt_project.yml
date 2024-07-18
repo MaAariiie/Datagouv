@@ -1,15 +1,15 @@
-name : "dbt_alternance"
-version : "1.0.0"
+name: "dbt_alternance"
+version: "1.0.0"
 config-version: 2
-profile : "default"
+profile: "default"
 
 models:
-  dbt_alternance : 
-    staging :
+  dbt_alternance:
+    staging:
       +materialized: view
-    intermediate :
+    intermediate:
       +materialized: view
-    mart :
+    mart:
       +materialized: table
-      rupture :
-        +schema : rupture
+      rupture:
+        +schema: rupture
