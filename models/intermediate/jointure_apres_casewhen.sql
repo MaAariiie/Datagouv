@@ -585,5 +585,3 @@ numero_contrat,
 formation_intitule_ou_qualification,
 categorie_formation
 FROM clean_table
-WHERE categorie_formation = "autre"
-ORDER BY formation_intitule_ou_qualification
