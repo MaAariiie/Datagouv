@@ -3,7 +3,7 @@ WITH test as
 numero_contrat,
 
 CASE
-  WHEN type_employeur_libelle LIKE "%Entreprise inscrite au répertoire des métiers ou au registre des entreprises pour l'Alsace-Moselle%" THEN "Entreprise inscrite au RCS ou RM pour l'Alsace-Moselle"
+  WHEN type_employeur_libelle LIKE '%Entreprise inscrite au répertoire des métiers ou au registre des entreprises pour lAlsace-Moselle%' THEN 'Entreprise inscrite au RCS ou RM pour lAlsace-Moselle'
   WHEN type_employeur_libelle LIKE '%Entreprise inscrite uniquement au registre du commerce et des sociétés%' THEN "Entreprise inscrite au RCS ou RM"
   WHEN type_employeur_libelle LIKE '%383%' THEN "Association"
   ELSE type_employeur_libelle
