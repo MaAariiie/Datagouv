@@ -1,7 +1,7 @@
 WITH test as
 (SELECT
-id_alternant,
-type_employeur_libelle,
+numero_contrat,
+
 CASE
   WHEN type_employeur_libelle LIKE "%Entreprise inscrite au répertoire des métiers ou au registre des entreprises pour l'Alsace-Moselle%" THEN "Entreprise inscrite au RCS ou RM pour l'Alsace-Moselle"
   WHEN type_employeur_libelle LIKE '%Entreprise inscrite uniquement au registre du commerce et des sociétés%' THEN "Entreprise inscrite au RCS ou RM"
@@ -16,5 +16,6 @@ CASE
 END AS public_prive
 FROM  {{ref('stg_Datagouv__contrat_deca_test')}})
 SELECT
-*
+numero_contrat,
+public_prive
 FROM test

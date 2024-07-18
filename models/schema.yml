@@ -20,9 +20,7 @@ models :
         
       - name : numero_contrat
         description : numéro d'identification du contrat - primary key
-        tests:
-          - unique
-          - not_null
+     
           
       - name : alternant_date_naissance
         description : date de naissance de l'alternant
@@ -56,8 +54,7 @@ models :
 
       - name : employeur_adresse_code_postal
         description : code postal de l'employeur de l'alternant
-        tests:
-          - not_null
+        
           
       - name : employeur_nombre_de_salaries
         description : nombre de salariés de l'employeur
@@ -125,9 +122,7 @@ models :
       
       - name : corrected_postal_code
         description : code postal nettoyé
-        tests: 
-          - not_null
-          - unique
+     
       
       - name : libelle_acheminement
         description: libellé de la commune

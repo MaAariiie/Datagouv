@@ -1,4 +1,5 @@
-SELECT *,
+SELECT 
+numero_contrat,
   COALESCE(
     titre_diplome_groupe,
     CASE
