@@ -144,4 +144,6 @@ models :
       
       - name : nom_departement_clean
         description : nom de la région nettoyé
+  
+  - name : jointure1
 
