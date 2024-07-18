@@ -1,6 +1,7 @@
 WITH test as
 (SELECT
 id_alternant,
+numero_contrat,
 type_employeur_libelle,
 CASE
   WHEN type_employeur_libelle LIKE "%Entreprise inscrite au répertoire des métiers ou au registre des entreprises pour l'Alsace-Moselle%" THEN "Entreprise inscrite au RCS ou RM pour l'Alsace-Moselle"

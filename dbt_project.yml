@@ -9,3 +9,7 @@ models:
       +materialized: view
     intermediate :
       +materialized: view
+    mart :
+      +materialized: table
+      rupture :
+        +schema : rupture

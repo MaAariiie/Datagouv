@@ -43,5 +43,4 @@ CASE
 END AS nom_departement_clean
 
 FROM test
-WHERE corrected_postal_code = ""
-ORDER BY code_commune_INSEE
+
