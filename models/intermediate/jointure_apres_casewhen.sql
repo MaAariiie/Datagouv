@@ -5,8 +5,7 @@ REGEXP_REPLACE(NORMALIZE(formation_intitule_ou_qualification, NFD), r'\p{Mn}', '
 FROM {{ ref('formation_Arnaud') }}),
 
 clean_table AS (
-SELECT
-numero_contrat,
+SELECT numero_contrat,
 formation_intitule_ou_qualification,
 CASE
       WHEN UPPER(formation_intitule_ou_qualification) LIKE '%JURI%'
