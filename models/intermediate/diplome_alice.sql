@@ -1,4 +1,4 @@
-SELECT 
+SELECT *,
   COALESCE(
     titre_diplome_groupe,
     CASE
