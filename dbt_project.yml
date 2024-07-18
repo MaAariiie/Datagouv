@@ -11,5 +11,4 @@ models:
       +materialized: view
     mart :
       +materialized: table
-      rupture :
-        +schema : rupture
+ 
