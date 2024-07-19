@@ -9,6 +9,8 @@ sources :
 
       - name : total_codes_postaux
 
+      - name : distance_global_copy
+
 
 
 models :
