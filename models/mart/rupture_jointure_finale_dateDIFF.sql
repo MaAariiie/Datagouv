@@ -3,7 +3,7 @@ SELECT *,
 REPLACE(CAST(formation_date_debut as STRING),"2002","2022") AS formation_date_debutv2,
 REPLACE(CAST(formation_date_fin as STRING),"5025","2025") AS formation_date_finv2,
 REPLACE(CAST(date_effet_rupture as STRING),"2002","2022") AS date_effet_rupturev2
-FROM {{ref('rupture_jointure_finale')}})
+FROM {{ref('jointure_finale')}}
 ),
 
 replace_2003 AS (
@@ -101,7 +101,7 @@ DATE_DIFF(formation_date_fin_clean, date_effet_rupture_clean, DAY) AS diff_fin_f
 FROM case_when_tab
 )
 
-SELECT id_alternant,
+SELECT 
 id_alternant, 
 numero_contrat, 
 alternant_date_naissance, 
